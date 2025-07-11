@@ -1,5 +1,5 @@
-data_storage/
+/data_storage/
 
-.spark_temp/
+/.spark_temp/
 
-.venv/
+/.venv/

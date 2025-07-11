@@ -12,7 +12,7 @@ from pyspark.sql import SparkSession
 # Cấu hình đường dẫn
 STATE_FILE = "../data_storage/hub3-partitioned_datasets_for_warehouse/downloaded_partitions.json"
 LOCAL_DATA_DIR = "../data_storage/hub3-partitioned_datasets_for_warehouse"
-LOG_FILE_PATH = "../data_validation/validation_stepX_lastest_downloaded_partitioned_dataset.log"
+LOG_FILE_PATH = "../data_validation/validation_stepX_lastest_downloaded_partition.log"
 
 def get_latest_downloaded_year():
     if not os.path.exists(STATE_FILE):
