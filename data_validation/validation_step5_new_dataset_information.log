@@ -1,0 +1,116 @@
+=== ✅ VALIDATION REPORT: fact_movie_full.parquet ===
+
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- startYear: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+
+
+🔹 Tổng số dòng:
+94624158
+
+🔹 Số lượng giá trị NULL theo cột:
+   tconst: 0 nulls
+   titleType: 0 nulls
+   primaryTitle: 0 nulls
+   originalTitle: 0 nulls
+   startYear: 9412409 nulls
+   endYear: 93556048 nulls
+   runtimeMinutes: 55201738 nulls
+   genres: 3040197 nulls
+   averageRating: 72651414 nulls
+   numVotes: 72651414 nulls
+   directors: 21018615 nulls
+   writers: 24967043 nulls
+   category: 1122586 nulls
+   primaryName: 1130602 nulls
+   primaryProfession: 4677839 nulls
+
+🔹 Phân phối theo titleType:
++------------+--------+
+|titleType   |count   |
++------------+--------+
+|tvEpisode   |70818667|
+|short       |8457483 |
+|movie       |8308816 |
+|video       |2344180 |
+|tvSeries    |1893968 |
+|tvMovie     |1643459 |
+|tvSpecial   |446663  |
+|tvMiniSeries|375965  |
+|videoGame   |253558  |
+|tvShort     |81398   |
+|tvPilot     |1       |
++------------+--------+
+
+
+🔹 Phân phối theo startYear:
++---------+-------+
+|startYear|count  |
++---------+-------+
+|NULL     |9412409|
+|1874     |4      |
+|1878     |38     |
+|1881     |26     |
+|1882     |6      |
+|1883     |3      |
+|1885     |2      |
+|1887     |132    |
+|1888     |19     |
+|1889     |3      |
+|1890     |29     |
+|1891     |60     |
+|1892     |28     |
+|1893     |24     |
+|1894     |402    |
+|1895     |357    |
+|1896     |1752   |
+|1897     |2066   |
+|1898     |2531   |
+|1899     |2578   |
++---------+-------+
+only showing top 20 rows
+
+
+🔹 Phân phối theo averageRating:
++-------------+--------+
+|averageRating|count   |
++-------------+--------+
+|NULL         |72651414|
+|1.0          |13146   |
+|1.1          |3047    |
+|1.2          |3810    |
+|1.3          |4020    |
+|1.4          |4762    |
+|1.5          |5764    |
+|1.6          |5373    |
+|1.7          |5755    |
+|1.8          |7271    |
+|1.9          |7211    |
+|10.0         |51001   |
+|2.0          |10146   |
+|2.1          |9268    |
+|2.2          |13030   |
+|2.3          |15033   |
+|2.4          |16251   |
+|2.5          |16604   |
+|2.6          |19294   |
+|2.7          |20473   |
++-------------+--------+
+only showing top 20 rows
+
+
+✅ Đã ghi báo cáo vào: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/output/step5_fact_validation.log

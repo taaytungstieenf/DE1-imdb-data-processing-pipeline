@@ -1,0 +1,39 @@
+
+
+================ VALIDATION RUN: 2025-07-11 13:10:30 ================
+
+✅ Validating latest downloaded partition: startYear=1878
+
+📂 Reading data from: ../data_storage/data_for_warehouse/startYear=1878
+
+📑 Schema of the loaded partition:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+ |-- startYear: integer (nullable = true)
+
+
+🔍 Sample records:
++----------+---------+-------------------+-------------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------+--------------------------------------+---------+
+|tconst    |titleType|primaryTitle       |originalTitle      |endYear|runtimeMinutes|genres         |averageRating|numVotes|directors|writers|category|primaryName  |primaryProfession                     |startYear|
++----------+---------+-------------------+-------------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------+--------------------------------------+---------+
+|tt32173064|short    |Le Steeple-Chase   |Le Steeple-Chase   |NULL   |1             |Animation,Short|5.1          |76      |nm0721526|NULL   |director|Émile Reynaud|director,animation_department,producer|1878     |
+|tt32169827|short    |L'Aquarium         |L'Aquarium         |NULL   |1             |Animation,Short|5.7          |86      |nm0721526|NULL   |director|Émile Reynaud|director,animation_department,producer|1878     |
+|tt32170373|short    |Les Scieurs de Long|Les Scieurs de Long|NULL   |1             |Animation,Short|5.1          |76      |nm0721526|NULL   |director|Émile Reynaud|director,animation_department,producer|1878     |
+|tt27119262|short    |Les Chiens Savants |Les Chiens Savants |NULL   |1             |Animation,Short|5.6          |157     |nm0721526|NULL   |director|Émile Reynaud|director,animation_department,producer|1878     |
+|tt12592084|short    |Le singe musicien  |Le singe musicien  |NULL   |1             |Animation,Short|6.0          |545     |nm0721526|NULL   |director|Émile Reynaud|director,animation_department,producer|1878     |
++----------+---------+-------------------+-------------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------+--------------------------------------+---------+
+only showing top 5 rows
+

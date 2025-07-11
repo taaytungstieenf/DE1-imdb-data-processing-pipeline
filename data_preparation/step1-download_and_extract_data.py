@@ -16,8 +16,8 @@ IMDB_URLS = [
 
 # Đường dẫn thư mục
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_RAW_DIR = os.path.join(BASE_DIR, '..', 'data_storage', 'data_raw')
-TSV_DIR = os.path.join(DATA_RAW_DIR, 'data_tsv')
+DATA_RAW_DIR = os.path.join(BASE_DIR, '..', 'data_storage', 'hub1-raw_data_for_manipulation')
+TSV_DIR = os.path.join(DATA_RAW_DIR, 'tsv_data')
 
 # Tạo thư mục nếu chưa tồn tại
 os.makedirs(DATA_RAW_DIR, exist_ok=True)

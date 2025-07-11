@@ -11,7 +11,7 @@ spark = SparkSession.builder.appName("Validate Fact Movie Data").getOrCreate()
 # Xác định đường dẫn
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FACT_DATA_PATH = os.path.join(PROJECT_ROOT, "data_validation", "data_for_batch", "fact_movie_full.parquet")
-LOG_PATH = os.path.join(PROJECT_ROOT, "data_validation", "validation_of_step5_fact_movie_full_dataset.log")
+LOG_PATH = os.path.join(PROJECT_ROOT, "data_validation", "validation_step5_new_dataset_information.log")
 
 # Đảm bảo thư mục data_validation tồn tại
 os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)

@@ -7,8 +7,8 @@ from pyspark.sql.functions import col
 
 # Đường dẫn
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_PARQUET_DIR = os.path.join(PROJECT_ROOT, "data_storage", "data_parquet")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data_validation", "data_for_batch")
+DATA_PARQUET_DIR = os.path.join(PROJECT_ROOT, "data_storage", "hub1-raw_data_for_manipulation", "parquet_data")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data_storage", "hub2-new_dataset_for_HDFS")
 SPARK_LOCAL_DIR = os.path.join(PROJECT_ROOT, ".spark_temp")  # Ghi dữ liệu tạm tại đây
 
 # Tạo thư mục nếu chưa có

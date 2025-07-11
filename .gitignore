@@ -1,23 +1,5 @@
-# Bỏ qua thư mục chứa dữ liệu
 data_storage/
 
-.spark_temp
+.spark_temp/
 
-# Bỏ qua virtual environment
-venv/
 .venv/
-
-# Bỏ qua file tạm và cache Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Bỏ log và data_validation tạm
-*.log
-
-# Bỏ notebook checkpoints nếu dùng Jupyter
-.ipynb_checkpoints/
-
-# VSCode config (nếu bạn dùng VSCode)
-.vscode/

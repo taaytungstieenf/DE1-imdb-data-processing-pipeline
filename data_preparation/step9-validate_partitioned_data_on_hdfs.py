@@ -16,7 +16,7 @@ hdfs_path = "hdfs://localhost:9000/user/hadoop/partitioned_by_year"
 df = spark.read.option("basePath", hdfs_path).parquet(hdfs_path)
 
 # --- Tạo log file ---
-log_file = "../data_validation/validation_of_step9_partition_check.log"
+log_file = "../data_validation/validation_step9_partitioned_datasets_on_hdfs.log"
 if os.path.exists(log_file):
     os.remove(log_file)
 

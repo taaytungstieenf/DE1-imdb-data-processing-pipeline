@@ -1,0 +1,214 @@
+
+==============================
+📦 Bảng: title.episode
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.episode.parquet
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- parentTconst: string (nullable = true)
+ |-- seasonNumber: string (nullable = true)
+ |-- episodeNumber: string (nullable = true)
+
+🔹 10 dòng đầu:
++----------+------------+------------+-------------+
+|tconst    |parentTconst|seasonNumber|episodeNumber|
++----------+------------+------------+-------------+
+|tt37060401|tt33145695  |3           |8            |
+|tt37060402|tt0249044   |NULL        |NULL         |
+|tt37060403|tt0249044   |NULL        |NULL         |
+|tt37060405|tt33145695  |3           |9            |
+|tt37060407|tt27370932  |2           |2            |
+|tt37060409|tt33145214  |1           |1            |
+|tt37060410|tt33145214  |1           |2            |
+|tt37060412|tt33145214  |1           |3            |
+|tt37060413|tt33145214  |1           |4            |
+|tt37060415|tt33145214  |1           |5            |
++----------+------------+------------+-------------+
+only showing top 10 rows
+
+🔹 Số dòng: 9056382
+
+==============================
+📦 Bảng: title.principals
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.principals.parquet
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- ordering: string (nullable = true)
+ |-- nconst: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- job: string (nullable = true)
+ |-- characters: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+--------+---------+---------------+-----------------------+----------+
+|tconst   |ordering|nconst   |category       |job                    |characters|
++---------+--------+---------+---------------+-----------------------+----------+
+|tt0000001|1       |nm1588970|self           |NULL                   |["Self"]  |
+|tt0000001|2       |nm0005690|director       |NULL                   |NULL      |
+|tt0000001|3       |nm0005690|producer       |producer               |NULL      |
+|tt0000001|4       |nm0374658|cinematographer|director of photography|NULL      |
+|tt0000002|1       |nm0721526|director       |NULL                   |NULL      |
+|tt0000002|2       |nm1335271|composer       |NULL                   |NULL      |
+|tt0000003|1       |nm0721526|director       |NULL                   |NULL      |
+|tt0000003|2       |nm0721526|writer         |NULL                   |NULL      |
+|tt0000003|3       |nm1770680|producer       |producer               |NULL      |
+|tt0000003|4       |nm0721526|producer       |producer               |NULL      |
++---------+--------+---------+---------------+-----------------------+----------+
+only showing top 10 rows
+
+🔹 Số dòng: 93501572
+
+==============================
+📦 Bảng: title.akas
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.akas.parquet
+🔹 Schema:
+root
+ |-- titleId: string (nullable = true)
+ |-- ordering: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- region: string (nullable = true)
+ |-- language: string (nullable = true)
+ |-- types: string (nullable = true)
+ |-- attributes: string (nullable = true)
+ |-- isOriginalTitle: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
+|titleId  |ordering|title                    |region|language|types      |attributes   |isOriginalTitle|
++---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
+|tt0000001|1       |Carmencita               |NULL  |NULL    |original   |NULL         |1              |
+|tt0000001|2       |Carmencita               |DE    |NULL    |NULL       |literal title|0              |
+|tt0000001|3       |Carmencita               |US    |NULL    |imdbDisplay|NULL         |0              |
+|tt0000001|4       |Carmencita - spanyol tánc|HU    |NULL    |imdbDisplay|NULL         |0              |
+|tt0000001|5       |Καρμενσίτα               |GR    |NULL    |imdbDisplay|NULL         |0              |
+|tt0000001|6       |Карменсита               |RU    |NULL    |imdbDisplay|NULL         |0              |
+|tt0000001|7       |Карменсіта               |UA    |NULL    |imdbDisplay|NULL         |0              |
+|tt0000001|8       |カルメンチータ           |JP    |ja      |imdbDisplay|NULL         |0              |
+|tt0000002|1       |Le clown et ses chiens   |NULL  |NULL    |original   |NULL         |1              |
+|tt0000002|2       |A bohóc és kutyái        |HU    |NULL    |imdbDisplay|NULL         |0              |
++---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
+only showing top 10 rows
+
+🔹 Số dòng: 52543017
+
+==============================
+📦 Bảng: title.basics
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.basics.parquet
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- isAdult: string (nullable = true)
+ |-- startYear: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
+|tconst   |titleType|primaryTitle                               |originalTitle                              |isAdult|startYear|endYear|runtimeMinutes|genres                  |
++---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
+|tt0000001|short    |Carmencita                                 |Carmencita                                 |0      |1894     |NULL   |1             |Documentary,Short       |
+|tt0000002|short    |Le clown et ses chiens                     |Le clown et ses chiens                     |0      |1892     |NULL   |5             |Animation,Short         |
+|tt0000003|short    |Poor Pierrot                               |Pauvre Pierrot                             |0      |1892     |NULL   |5             |Animation,Comedy,Romance|
+|tt0000004|short    |Un bon bock                                |Un bon bock                                |0      |1892     |NULL   |12            |Animation,Short         |
+|tt0000005|short    |Blacksmith Scene                           |Blacksmith Scene                           |0      |1893     |NULL   |1             |Short                   |
+|tt0000006|short    |Chinese Opium Den                          |Chinese Opium Den                          |0      |1894     |NULL   |1             |Short                   |
+|tt0000007|short    |Corbett and Courtney Before the Kinetograph|Corbett and Courtney Before the Kinetograph|0      |1894     |NULL   |1             |Short,Sport             |
+|tt0000008|short    |Edison Kinetoscopic Record of a Sneeze     |Edison Kinetoscopic Record of a Sneeze     |0      |1894     |NULL   |1             |Documentary,Short       |
+|tt0000009|movie    |Miss Jerry                                 |Miss Jerry                                 |0      |1894     |NULL   |45            |Romance                 |
+|tt0000010|short    |Leaving the Factory                        |La sortie de l'usine Lumière à Lyon        |0      |1895     |NULL   |1             |Documentary,Short       |
++---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
+only showing top 10 rows
+
+🔹 Số dòng: 11766461
+
+==============================
+📦 Bảng: title.ratings
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.ratings.parquet
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+-------------+--------+
+|tconst   |averageRating|numVotes|
++---------+-------------+--------+
+|tt0000001|5.7          |2165    |
+|tt0000002|5.5          |296     |
+|tt0000003|6.5          |2219    |
+|tt0000004|5.3          |190     |
+|tt0000005|6.2          |2957    |
+|tt0000006|5.0          |214     |
+|tt0000007|5.3          |914     |
+|tt0000008|5.4          |2310    |
+|tt0000009|5.4          |227     |
+|tt0000010|6.8          |8014    |
++---------+-------------+--------+
+only showing top 10 rows
+
+🔹 Số dòng: 1587436
+
+==============================
+📦 Bảng: name.basics
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/name.basics.parquet
+🔹 Schema:
+root
+ |-- nconst: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- birthYear: string (nullable = true)
+ |-- deathYear: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+ |-- knownForTitles: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+---------------+---------+---------+-------------------------+---------------------------------------+
+|nconst   |primaryName    |birthYear|deathYear|primaryProfession        |knownForTitles                         |
++---------+---------------+---------+---------+-------------------------+---------------------------------------+
+|nm3364915|Joseph Amon    |NULL     |NULL     |sound_department         |tt1387285                              |
+|nm3364916|Dick True      |NULL     |NULL     |miscellaneous            |tt1236414                              |
+|nm3364917|Katsuhiro Katô |NULL     |NULL     |actor                    |tt1396461                              |
+|nm3364918|Kitty Phipps   |NULL     |NULL     |script_department,writer |tt1395498,tt0413598                    |
+|nm3364919|Bobby Naranjo  |NULL     |NULL     |camera_department        |tt0422717,tt0452257                    |
+|nm3364920|Seymour Bergman|NULL     |NULL     |miscellaneous            |tt0098648                              |
+|nm3364921|Kenny Geraghty |NULL     |NULL     |sound_department,producer|tt7683762,tt2414822,tt0239195,tt2444946|
+|nm3364922|Eric Heikkinen |NULL     |NULL     |editor                   |tt1395230                              |
+|nm3364923|Matej Novák    |NULL     |NULL     |actor                    |tt0461004,tt0239202                    |
+|nm3364924|Billy Terrell  |NULL     |NULL     |editorial_department     |tt1160370                              |
++---------+---------------+---------+---------+-------------------------+---------------------------------------+
+only showing top 10 rows
+
+🔹 Số dòng: 14540653
+
+==============================
+📦 Bảng: title.crew
+📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.crew.parquet
+🔹 Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+
+🔹 10 dòng đầu:
++---------+-------------------+---------+
+|tconst   |directors          |writers  |
++---------+-------------------+---------+
+|tt0000001|nm0005690          |NULL     |
+|tt0000002|nm0721526          |NULL     |
+|tt0000003|nm0721526          |nm0721526|
+|tt0000004|nm0721526          |NULL     |
+|tt0000005|nm0005690          |NULL     |
+|tt0000006|nm0005690          |NULL     |
+|tt0000007|nm0005690,nm0374658|NULL     |
+|tt0000008|nm0005690          |NULL     |
+|tt0000009|nm0085156          |nm0085156|
+|tt0000010|nm0525910          |NULL     |
++---------+-------------------+---------+
+only showing top 10 rows
+
+🔹 Số dòng: 11766461

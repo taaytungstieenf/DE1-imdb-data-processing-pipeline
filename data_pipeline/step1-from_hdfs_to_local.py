@@ -5,8 +5,8 @@ from pathlib import Path
 
 HDFS_CMD = "/opt/hadoop/bin/hdfs"
 HDFS_PARTITION_PATH = "/user/hadoop/partitioned_by_year"
-LOCAL_TARGET_DIR = "../data_storage/data_for_warehouse"
-STATE_FILE = "../data_storage/data_for_warehouse/downloaded_partitions.json"
+LOCAL_TARGET_DIR = "../data_storage/hub3-partitioned_datasets_for_warehouse"
+STATE_FILE = "../data_storage/hub3-partitioned_datasets_for_warehouse/downloaded_partitions.json"
 
 def load_downloaded_state():
     if os.path.exists(STATE_FILE):

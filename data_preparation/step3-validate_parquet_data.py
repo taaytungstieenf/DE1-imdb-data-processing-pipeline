@@ -11,7 +11,7 @@ spark = SparkSession.builder.appName("Query Parquet Tables").getOrCreate()
 # Đường dẫn dự án
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PARQUET_DIR = os.path.join(PROJECT_ROOT, "data_storage", "data_parquet")
-OUTPUT_LOG = os.path.join(PROJECT_ROOT, "data_validation", "validation_of_step3_head_of_imdb_data.log")
+OUTPUT_LOG = os.path.join(PROJECT_ROOT, "data_validation", "validation_step3_parquet_data_information.log")
 
 # Đảm bảo thư mục data_validation tồn tại
 os.makedirs(os.path.dirname(OUTPUT_LOG), exist_ok=True)

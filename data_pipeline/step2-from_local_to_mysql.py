@@ -72,7 +72,7 @@ def load_to_mysql(df, table_name="fact_movies"):
 
 if __name__ == "__main__":
     parquet_dir = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "../data_storage/data_for_warehouse")
+        os.path.join(os.path.dirname(__file__), "../data_storage/hub3-partitioned_datasets_for_warehouse")
     )
 
     print(f"📂 Reading parquet files from: {parquet_dir}")
