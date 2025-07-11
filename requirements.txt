@@ -1,0 +1,8 @@
+findspark
+pyspark
+matplotlib
+seaborn
+mysql-connector-python~=9.3.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+sqlalchemy>=2.0.0
