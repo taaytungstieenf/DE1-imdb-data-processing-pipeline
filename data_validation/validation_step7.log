@@ -1,0 +1,22 @@
+✅ Validation of dataset on HDFS path:
+hdfs://localhost:9000/user/hadoop/imdb_storage/fact_movie_full.parquet
+
+Total rows: 94624158
+
+Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- startYear: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)

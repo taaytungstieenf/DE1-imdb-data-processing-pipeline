@@ -1,16 +1,16 @@
 >> Schema:
 None
 
->> Tổng số dòng: 85211749
+Number of records: 85211749
 
->> 5 dòng đầu tiên:
+First 5 records:
        tconst     titleType              primaryTitle             originalTitle endYear runtimeMinutes                  genres averageRating numVotes   directors     writers         category     primaryName                                  primaryProfession  startYear
 0  tt11052470  tvMiniSeries            Move to Heaven            Move to Heaven    2021             60                   Drama           8.5    11471   nm1193005  nm11028644          actress  Jung Young-joo                                            actress       2021
 1  tt15976528         short         Everlasting Wheat         Everlasting Wheat    None              4          Short,Thriller          None     None   nm4947333   nm4947333         producer   Michael Hayes                           producer,director,editor       2021
 2  tt13972688         movie  My Big Mama's Crazy Ride  My Big Mama's Crazy Ride    None             99                  Comedy           5.1       18  nm12287234  nm12287234          actress  Jung Young-joo                                            actress       2021
 3   tt3513522         movie  Potato Dreams of America  Potato Dreams of America    None             97  Biography,Comedy,Drama           6.4      943   nm1943775   nm1943775  cinematographer  Vincent Pierce  cinematographer,special_effects,camera_department       2021
 4  tt12478536     tvEpisode              Episode #1.1              Episode #1.1    None           None                   Drama           8.5      294        None        None          actress  Jung Young-joo                                            actress       2021
->> Số lượng dòng theo từng startYear:
+Number of records by startYear:
 1874: 4
 1878: 38
 1881: 26
@@ -164,7 +164,7 @@ None
 2031: 17
 2032: 5
 
->> Kiểm tra giá trị NULL:
+Check NULL values:
 primaryTitle: 0 NULL/empty
 genres: 2765706 NULL/empty
 averageRating: 63242013 NULL/empty

@@ -1,6 +1,6 @@
 === ✅ VALIDATION REPORT: fact_movie_full.parquet ===
 
-🔹 Schema:
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- titleType: string (nullable = true)
@@ -19,10 +19,10 @@ root
  |-- primaryProfession: string (nullable = true)
 
 
-🔹 Tổng số dòng:
+Number of records:
 94624158
 
-🔹 Số lượng giá trị NULL theo cột:
+NULL values in each field:
    tconst: 0 nulls
    titleType: 0 nulls
    primaryTitle: 0 nulls
@@ -39,7 +39,7 @@ root
    primaryName: 1130602 nulls
    primaryProfession: 4677839 nulls
 
-🔹 Phân phối theo titleType:
+Distribution by titleType:
 +------------+--------+
 |titleType   |count   |
 +------------+--------+
@@ -57,7 +57,7 @@ root
 +------------+--------+
 
 
-🔹 Phân phối theo startYear:
+Distribution by startYear:
 +---------+-------+
 |startYear|count  |
 +---------+-------+
@@ -85,7 +85,7 @@ root
 only showing top 20 rows
 
 
-🔹 Phân phối theo averageRating:
+Distribution by averageRating:
 +-------------+--------+
 |averageRating|count   |
 +-------------+--------+
@@ -113,4 +113,4 @@ only showing top 20 rows
 only showing top 20 rows
 
 
-✅ Đã ghi báo cáo vào: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/output/step5_fact_validation.log
+Report was saved successfully at: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_validation/validation_step5_new_dataset_information.log

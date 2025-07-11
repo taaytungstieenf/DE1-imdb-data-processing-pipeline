@@ -1,15 +1,15 @@
 
 ==============================
-📦 Bảng: title.episode
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.episode.parquet
-🔹 Schema:
+Table: title.episode
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.episode.parquet
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- parentTconst: string (nullable = true)
  |-- seasonNumber: string (nullable = true)
  |-- episodeNumber: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +----------+------------+------------+-------------+
 |tconst    |parentTconst|seasonNumber|episodeNumber|
 +----------+------------+------------+-------------+
@@ -26,12 +26,12 @@ root
 +----------+------------+------------+-------------+
 only showing top 10 rows
 
-🔹 Số dòng: 9056382
+Number of records: 9056382
 
 ==============================
-📦 Bảng: title.principals
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.principals.parquet
-🔹 Schema:
+Table: title.principals
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.principals.parquet
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- ordering: string (nullable = true)
@@ -40,7 +40,7 @@ root
  |-- job: string (nullable = true)
  |-- characters: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+--------+---------+---------------+-----------------------+----------+
 |tconst   |ordering|nconst   |category       |job                    |characters|
 +---------+--------+---------+---------------+-----------------------+----------+
@@ -57,12 +57,12 @@ root
 +---------+--------+---------+---------------+-----------------------+----------+
 only showing top 10 rows
 
-🔹 Số dòng: 93501572
+Number of records: 93501572
 
 ==============================
-📦 Bảng: title.akas
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.akas.parquet
-🔹 Schema:
+Table: title.akas
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.akas.parquet
+Schema:
 root
  |-- titleId: string (nullable = true)
  |-- ordering: string (nullable = true)
@@ -73,7 +73,7 @@ root
  |-- attributes: string (nullable = true)
  |-- isOriginalTitle: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
 |titleId  |ordering|title                    |region|language|types      |attributes   |isOriginalTitle|
 +---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
@@ -90,12 +90,12 @@ root
 +---------+--------+-------------------------+------+--------+-----------+-------------+---------------+
 only showing top 10 rows
 
-🔹 Số dòng: 52543017
+Number of records: 52543017
 
 ==============================
-📦 Bảng: title.basics
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.basics.parquet
-🔹 Schema:
+Table: title.basics
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.basics.parquet
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- titleType: string (nullable = true)
@@ -107,7 +107,7 @@ root
  |-- runtimeMinutes: string (nullable = true)
  |-- genres: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
 |tconst   |titleType|primaryTitle                               |originalTitle                              |isAdult|startYear|endYear|runtimeMinutes|genres                  |
 +---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
@@ -124,18 +124,18 @@ root
 +---------+---------+-------------------------------------------+-------------------------------------------+-------+---------+-------+--------------+------------------------+
 only showing top 10 rows
 
-🔹 Số dòng: 11766461
+Number of records: 11766461
 
 ==============================
-📦 Bảng: title.ratings
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.ratings.parquet
-🔹 Schema:
+Table: title.ratings
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.ratings.parquet
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- averageRating: string (nullable = true)
  |-- numVotes: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+-------------+--------+
 |tconst   |averageRating|numVotes|
 +---------+-------------+--------+
@@ -152,12 +152,12 @@ root
 +---------+-------------+--------+
 only showing top 10 rows
 
-🔹 Số dòng: 1587436
+Number of records: 1587436
 
 ==============================
-📦 Bảng: name.basics
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/name.basics.parquet
-🔹 Schema:
+Table: name.basics
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/name.basics.parquet
+Schema:
 root
  |-- nconst: string (nullable = true)
  |-- primaryName: string (nullable = true)
@@ -166,7 +166,7 @@ root
  |-- primaryProfession: string (nullable = true)
  |-- knownForTitles: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+---------------+---------+---------+-------------------------+---------------------------------------+
 |nconst   |primaryName    |birthYear|deathYear|primaryProfession        |knownForTitles                         |
 +---------+---------------+---------+---------+-------------------------+---------------------------------------+
@@ -183,18 +183,18 @@ root
 +---------+---------------+---------+---------+-------------------------+---------------------------------------+
 only showing top 10 rows
 
-🔹 Số dòng: 14540653
+Number of records: 14540653
 
 ==============================
-📦 Bảng: title.crew
-📁 File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/data_parquet/title.crew.parquet
-🔹 Schema:
+Table: title.crew
+File: /home/tae/Projects/Capstone 1 – DATA ENGINEERING/DE1-imdb-data-processing-pipeline/data_storage/hub1-raw_data_for_manipulation/parquet_data/title.crew.parquet
+Schema:
 root
  |-- tconst: string (nullable = true)
  |-- directors: string (nullable = true)
  |-- writers: string (nullable = true)
 
-🔹 10 dòng đầu:
+First 10 records:
 +---------+-------------------+---------+
 |tconst   |directors          |writers  |
 +---------+-------------------+---------+
@@ -211,4 +211,4 @@ root
 +---------+-------------------+---------+
 only showing top 10 rows
 
-🔹 Số dòng: 11766461
+Number of records: 11766461

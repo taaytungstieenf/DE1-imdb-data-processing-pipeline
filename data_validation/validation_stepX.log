@@ -1,0 +1,39 @@
+
+
+================ VALIDATION RUN: 2025-07-11 17:25:46 ================
+
+✅ Validating latest downloaded partition: startYear=1881
+
+📂 Reading data from: ../data_storage/hub3-partitioned_datasets_for_warehouse/startYear=1881
+
+📑 Schema of the loaded partition:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+ |-- startYear: integer (nullable = true)
+
+
+🔍 Sample records:
++----------+---------+----------------------+----------------------+-------+--------------+---------------+-------------+--------+---------+-------+---------------+------------------+---------------------------------+---------+
+|tconst    |titleType|primaryTitle          |originalTitle         |endYear|runtimeMinutes|genres         |averageRating|numVotes|directors|writers|category       |primaryName       |primaryProfession                |startYear|
++----------+---------+----------------------+----------------------+-------+--------------+---------------+-------------+--------+---------+-------+---------------+------------------+---------------------------------+---------+
+|tt32186574|short    |Athletes Wrestling    |Athletes Wrestling    |NULL   |1             |Short          |4.8          |43      |nm1155956|NULL   |director       |Eadweard Muybridge|director,cinematographer,producer|1881     |
+|tt32178989|short    |Athlete Walking 1     |Athlete Walking 1     |NULL   |1             |Short          |4.3          |44      |nm1155956|NULL   |director       |Eadweard Muybridge|director,cinematographer,producer|1881     |
+|tt15320514|short    |Skeleton of Horse     |Skeleton of Horse     |NULL   |1             |Animation,Short|6.1          |320     |nm1155956|NULL   |director       |Eadweard Muybridge|director,cinematographer,producer|1881     |
+|tt32186391|short    |Athlete Throwing Lance|Athlete Throwing Lance|NULL   |1             |Short          |4.6          |43      |nm1155956|NULL   |director       |Eadweard Muybridge|director,cinematographer,producer|1881     |
+|tt15320514|short    |Skeleton of Horse     |Skeleton of Horse     |NULL   |1             |Animation,Short|6.1          |320     |nm1155956|NULL   |cinematographer|Eadweard Muybridge|director,cinematographer,producer|1881     |
++----------+---------+----------------------+----------------------+-------+--------------+---------------+-------------+--------+---------+-------+---------------+------------------+---------------------------------+---------+
+only showing top 5 rows
+
