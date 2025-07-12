@@ -1,4 +1,4 @@
-✅ Validation of dataset on HDFS path:
+Validation of dataset on HDFS path:
 hdfs://localhost:9000/user/hadoop/imdb_storage/fact_movie_full.parquet
 
 Total rows: 94624158

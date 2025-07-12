@@ -34,11 +34,11 @@ with open(LOG_PATH, "w", encoding="utf-8") as f:
         print("\nDistribution by titleType:")
         df.groupBy("titleType").count().orderBy("count", ascending=False).show(truncate=False)
 
-        # Phân phối theo startYear
+        # Distribution by startYear
         print("\nDistribution by startYear:")
         df.groupBy("startYear").count().orderBy("startYear").show(20, truncate=False)
 
-        # Phân phối theo averageRating
+        # Distribution by averageRating
         print("\nDistribution by averageRating:")
         df.groupBy("averageRating").count().orderBy("averageRating").show(20, truncate=False)
 
