@@ -1,0 +1,35 @@
+
+
+================ VALIDATION RUN: 2025-07-12 16:15:16 ================
+
+✅ Validating latest downloaded partition: startYear=1885
+
+Reading data from: ../../data_storage/hub3-partitioned_datasets_for_warehouse/startYear=1885
+
+Schema of the loaded partition:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+ |-- startYear: integer (nullable = true)
+
+
+Sample records:
++---------+---------+---------------+---------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------------+---------------------------------+---------+
+|tconst   |titleType|primaryTitle   |originalTitle  |endYear|runtimeMinutes|genres         |averageRating|numVotes|directors|writers|category|primaryName        |primaryProfession                |startYear|
++---------+---------+---------------+---------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------------+---------------------------------+---------+
+|tt8588366|short    |L'homme machine|L'homme machine|NULL   |1             |Animation,Short|5.2          |635     |nm4620889|NULL   |director|Étienne-Jules Marey|director,producer,cinematographer|1885     |
+|tt8588366|short    |L'homme machine|L'homme machine|NULL   |1             |Animation,Short|5.2          |635     |nm4620889|NULL   |producer|Étienne-Jules Marey|director,producer,cinematographer|1885     |
++---------+---------+---------------+---------------+-------+--------------+---------------+-------------+--------+---------+-------+--------+-------------------+---------------------------------+---------+
+

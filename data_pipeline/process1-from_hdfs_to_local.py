@@ -1,7 +1,6 @@
 import os
 import subprocess
 import json
-from pathlib import Path
 
 HDFS_CMD = "/opt/hadoop/bin/hdfs"
 HDFS_PARTITION_PATH = "/user/hadoop/partitioned_by_year"
@@ -36,7 +35,7 @@ def download_partition(year, hdfs_partition_path):
 
     print(f"Downloading startYear={year} from {hdfs_partition_path} -> {local_dir}")
 
-    # Liệt kê các file .parquet trong thư mục HDFS partition
+    # List .parquet files in HDFS partition directory
     result = subprocess.run([HDFS_CMD, "dfs", "-ls", hdfs_partition_path],
                             capture_output=True, text=True)
     lines = result.stdout.strip().split("\n")

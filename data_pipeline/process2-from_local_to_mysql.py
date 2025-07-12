@@ -4,7 +4,6 @@ import pyarrow.parquet as pq
 from pathlib import Path
 from sqlalchemy import create_engine
 
-# Cấu hình kết nối MySQL từ biến môi trường hoặc mặc định
 DB_CONFIG = {
     'host': os.getenv('DB_HOST', 'localhost'),
     'user': os.getenv('DB_USER', 'root'),
@@ -20,7 +19,7 @@ def read_all_parquet_files(base_dir):
             if file.endswith(".parquet"):
                 file_path = os.path.join(root, file)
 
-                # Trích xuất partition: startYear=XXXX
+                # Extract partition: startYear=XXXX
                 try:
                     partition_folder = Path(file_path).parent.name
                     if partition_folder.startswith("startYear="):
@@ -34,14 +33,14 @@ def read_all_parquet_files(base_dir):
                     table = pq.read_table(file_path)
                     df = table.to_pandas()
 
-                    # Nếu thiếu startYear thì thêm vào
+                    # If startYear is missing, add it
                     if "startYear" not in df.columns and start_year is not None:
                         df["startYear"] = start_year
 
                     all_dfs.append(df)
-                    print(f"✅ Loaded: {file_path} (startYear={start_year})")
+                    print(f"Loaded: {file_path} (startYear={start_year})")
                 except Exception as e:
-                    print(f"❌ Failed to load {file_path}: {e}")
+                    print(f"Failed to load {file_path}: {e}")
 
     if all_dfs:
         return pd.concat(all_dfs, ignore_index=True)
@@ -51,10 +50,10 @@ def read_all_parquet_files(base_dir):
 
 def load_to_mysql(df, table_name="fact_movies"):
     if df.empty:
-        print("⚠️ No data to load.")
+        print("No data to load.")
         return
 
-    # Tạo connection string cho SQLAlchemy
+    # Create a connection string for SQLAlchemy
     user = DB_CONFIG['user']
     password = DB_CONFIG['password']
     host = DB_CONFIG['host']
@@ -75,7 +74,7 @@ if __name__ == "__main__":
         os.path.join(os.path.dirname(__file__), "../data_storage/hub3-partitioned_datasets_for_warehouse")
     )
 
-    print(f"📂 Reading parquet files from: {parquet_dir}")
+    print(f"Reading parquet files from: {parquet_dir}")
     df = read_all_parquet_files(parquet_dir)
     print(f"📊 Total rows loaded into memory: {len(df)}")
 

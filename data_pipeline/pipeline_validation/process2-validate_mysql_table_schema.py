@@ -11,9 +11,10 @@ DB_CONFIG = {
 }
 
 # Config logger
-log_file_path = Path(__file__).resolve().parent.parent / 'data_validation' / 'validation_stepY.log'
+LOG_FILE_PATH = Path(__file__).resolve().parent.parent /'..'/ 'data_validation' / 'validation_process2.log'
+
 logging.basicConfig(
-    filename=log_file_path,
+    filename=LOG_FILE_PATH,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
 )

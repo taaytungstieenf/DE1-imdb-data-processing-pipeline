@@ -8,9 +8,9 @@ import sys
 findspark.init("/opt/spark")
 from pyspark.sql import SparkSession
 
-STATE_FILE = "../data_storage/hub3-partitioned_datasets_for_warehouse/downloaded_partitions.json"
-LOCAL_DATA_DIR = "../data_storage/hub3-partitioned_datasets_for_warehouse"
-LOG_FILE_PATH = "../data_validation/validation_stepX.log"
+STATE_FILE = "../../data_storage/hub3-partitioned_datasets_for_warehouse/downloaded_partitions.json"
+LOCAL_DATA_DIR = "../../data_storage/hub3-partitioned_datasets_for_warehouse"
+LOG_FILE_PATH = "../../data_validation/validation_process1.log"
 
 def get_latest_downloaded_year():
     if not os.path.exists(STATE_FILE):

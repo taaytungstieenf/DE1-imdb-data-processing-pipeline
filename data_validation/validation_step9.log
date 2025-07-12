@@ -1,170 +1,20 @@
->> Schema:
-None
+Schema:
+root
+ |-- tconst: string (nullable = true)
+ |-- titleType: string (nullable = true)
+ |-- primaryTitle: string (nullable = true)
+ |-- originalTitle: string (nullable = true)
+ |-- endYear: string (nullable = true)
+ |-- runtimeMinutes: string (nullable = true)
+ |-- genres: string (nullable = true)
+ |-- averageRating: string (nullable = true)
+ |-- numVotes: string (nullable = true)
+ |-- directors: string (nullable = true)
+ |-- writers: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- primaryName: string (nullable = true)
+ |-- primaryProfession: string (nullable = true)
+ |-- startYear: integer (nullable = true)
+
 
 Number of records: 85211749
-
-First 5 records:
-       tconst     titleType              primaryTitle             originalTitle endYear runtimeMinutes                  genres averageRating numVotes   directors     writers         category     primaryName                                  primaryProfession  startYear
-0  tt11052470  tvMiniSeries            Move to Heaven            Move to Heaven    2021             60                   Drama           8.5    11471   nm1193005  nm11028644          actress  Jung Young-joo                                            actress       2021
-1  tt15976528         short         Everlasting Wheat         Everlasting Wheat    None              4          Short,Thriller          None     None   nm4947333   nm4947333         producer   Michael Hayes                           producer,director,editor       2021
-2  tt13972688         movie  My Big Mama's Crazy Ride  My Big Mama's Crazy Ride    None             99                  Comedy           5.1       18  nm12287234  nm12287234          actress  Jung Young-joo                                            actress       2021
-3   tt3513522         movie  Potato Dreams of America  Potato Dreams of America    None             97  Biography,Comedy,Drama           6.4      943   nm1943775   nm1943775  cinematographer  Vincent Pierce  cinematographer,special_effects,camera_department       2021
-4  tt12478536     tvEpisode              Episode #1.1              Episode #1.1    None           None                   Drama           8.5      294        None        None          actress  Jung Young-joo                                            actress       2021
-Number of records by startYear:
-1874: 4
-1878: 38
-1881: 26
-1882: 6
-1883: 3
-1885: 2
-1887: 132
-1888: 19
-1889: 3
-1890: 29
-1891: 60
-1892: 28
-1893: 24
-1894: 402
-1895: 357
-1896: 1752
-1897: 2066
-1898: 2531
-1899: 2578
-1900: 2678
-1901: 2386
-1902: 2458
-1903: 3318
-1904: 2326
-1905: 2436
-1906: 2931
-1907: 3686
-1908: 7209
-1909: 10885
-1910: 14255
-1911: 20328
-1912: 30599
-1913: 40273
-1914: 45060
-1915: 46901
-1916: 42889
-1917: 36677
-1918: 29641
-1919: 29864
-1920: 32297
-1921: 30448
-1922: 25760
-1923: 24145
-1924: 25131
-1925: 27981
-1926: 29390
-1927: 29673
-1928: 29307
-1929: 29608
-1930: 28625
-1931: 31597
-1932: 30392
-1933: 29856
-1934: 31832
-1935: 32488
-1936: 35109
-1937: 36796
-1938: 37253
-1939: 34724
-1940: 30744
-1941: 28477
-1942: 28357
-1943: 25572
-1944: 22599
-1945: 21285
-1946: 27401
-1947: 30558
-1948: 36884
-1949: 48266
-1950: 64570
-1951: 80755
-1952: 92751
-1953: 104115
-1954: 139864
-1955: 140525
-1956: 140629
-1957: 153703
-1958: 166744
-1959: 180434
-1960: 203263
-1961: 215060
-1962: 202104
-1963: 221834
-1964: 239405
-1965: 280119
-1966: 287842
-1967: 313788
-1968: 301665
-1969: 353944
-1970: 335224
-1971: 342057
-1972: 337133
-1973: 346477
-1974: 333665
-1975: 336436
-1976: 348451
-1977: 345364
-1978: 350652
-1979: 354787
-1980: 372232
-1981: 362290
-1982: 393599
-1983: 409818
-1984: 419276
-1985: 443041
-1986: 435031
-1987: 468382
-1988: 453973
-1989: 482075
-1990: 511510
-1991: 533354
-1992: 533495
-1993: 586195
-1994: 629688
-1995: 698626
-1996: 745893
-1997: 819127
-1998: 878663
-1999: 939986
-2000: 942738
-2001: 1028205
-2002: 1066004
-2003: 1191063
-2004: 1327665
-2005: 1489384
-2006: 1646841
-2007: 1799386
-2008: 1974771
-2009: 2063465
-2010: 2263242
-2011: 2498628
-2012: 2733014
-2013: 2898864
-2014: 3051917
-2015: 3171415
-2016: 3339937
-2017: 3561269
-2018: 3601195
-2019: 3579042
-2020: 3164198
-2021: 3824875
-2022: 4087869
-2023: 4027292
-2024: 3677674
-2025: 1455875
-2026: 15933
-2027: 661
-2028: 164
-2029: 89
-2030: 23
-2031: 17
-2032: 5
-
-Check NULL values:
-primaryTitle: 0 NULL/empty
-genres: 2765706 NULL/empty
-averageRating: 63242013 NULL/empty
