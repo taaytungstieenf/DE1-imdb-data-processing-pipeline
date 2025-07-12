@@ -19,7 +19,9 @@ def load_data():
     df['startYear'] = pd.to_numeric(df['startYear'], errors='coerce')
     return df.dropna()
 
-st.title("📊 Bar Chart: Number of Movies by Start Year")
+st.set_page_config(page_title="IMDB Overview", layout="centered")
+
+st.title("📊 Bar Chart: Movies in Each Year")
 
 df = load_data()
 top_years = df['startYear'].value_counts().sort_index()

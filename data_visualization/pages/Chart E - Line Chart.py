@@ -21,6 +21,7 @@ def load_data():
     df = df.dropna()
     return df
 
+st.set_page_config(page_title="IMDB Overview", layout="centered")
 st.title("📊 Line Chart: Avg Rating by Year")
 
 df = load_data()

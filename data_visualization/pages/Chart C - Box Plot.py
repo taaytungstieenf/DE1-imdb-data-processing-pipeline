@@ -23,6 +23,7 @@ def load_data():
     df['genres'] = df['genres'].apply(lambda x: x.split(',')[0] if ',' in x else x)
     return df
 
+st.set_page_config(page_title="IMDB Overview", layout="centered")
 st.title("📊 Box Plot: Rating by Genre")
 
 df = load_data()

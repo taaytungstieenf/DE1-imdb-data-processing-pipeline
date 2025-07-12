@@ -19,6 +19,8 @@ def load_data():
     df['averageRating'] = pd.to_numeric(df['averageRating'], errors='coerce')
     return df.dropna()
 
+st.set_page_config(page_title="IMDB Overview", layout="centered")
+
 st.title("📊 Histogram: Average Rating")
 
 df = load_data()

@@ -21,6 +21,7 @@ def load_data():
         df[col] = pd.to_numeric(df[col], errors='coerce')
     return df.dropna()
 
+st.set_page_config(page_title="IMDB Overview", layout="centered")
 st.title("📊 Heatmap: Feature Correlation")
 
 df = load_data()

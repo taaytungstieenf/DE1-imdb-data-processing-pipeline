@@ -20,7 +20,8 @@ def load_data():
     df['numVotes'] = pd.to_numeric(df['numVotes'], errors='coerce')
     return df.dropna()
 
-st.title("📊 Scatter Plot: Rating vs Number of Votes")
+st.set_page_config(page_title="IMDB Overview", layout="centered")
+st.title("📊 Scatter Plot: Rating vs Number")
 
 df = load_data()
 

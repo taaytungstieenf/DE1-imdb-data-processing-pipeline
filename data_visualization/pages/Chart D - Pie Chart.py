@@ -19,6 +19,7 @@ def load_data():
     conn.close()
     return df
 
+st.set_page_config(page_title="IMDB Overview", layout="centered")
 st.title("📊 Pie Chart: Genre Distribution")
 
 df = load_data()

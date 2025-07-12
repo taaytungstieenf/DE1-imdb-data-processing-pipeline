@@ -18,24 +18,11 @@ def write_log(msg):
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
-write_log(">> Schema:")
-write_log(df.printSchema().__str__())
+schema_string = df._jdf.schema().treeString()
+write_log("Schema:")
+write_log(schema_string)
 
 total_rows = df.count()
 write_log(f"\nNumber of records: {total_rows}")
-
-write_log("\nFirst 5 records:")
-df.limit(5).toPandas().to_string(buf=open(log_file, "a", encoding="utf-8"))
-
-write_log("\nNumber of records by startYear:")
-year_counts = df.groupBy("startYear").count().orderBy("startYear")
-for row in year_counts.collect():
-    write_log(f"{row['startYear']}: {row['count']}")
-
-columns_to_check = ["primaryTitle", "genres", "averageRating"]
-write_log("\nCheck NULL values:")
-for col in columns_to_check:
-    null_count = df.filter(df[col].isNull() | (df[col] == "")).count()
-    write_log(f"{col}: {null_count} NULL/empty")
 
 spark.stop()
