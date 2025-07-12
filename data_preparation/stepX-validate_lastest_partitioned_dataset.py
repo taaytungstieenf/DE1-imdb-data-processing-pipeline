@@ -26,28 +26,26 @@ def validate_partition(year, log_buffer):
     if not os.path.exists(partition_path):
         raise FileNotFoundError(f"Partition folder not found: {partition_path}")
 
-    spark = SparkSession.builder \
-        .appName(f"Validate IMDB Partition: startYear={year}") \
-        .getOrCreate()
+    spark = SparkSession.builder.appName(f"Validate IMDB Partition: startYear={year}").getOrCreate()
 
-    log_buffer.write(f"\n📂 Reading data from: {partition_path}\n")
+    log_buffer.write(f"\nReading data from: {partition_path}\n")
     df = spark.read.option("basePath", LOCAL_DATA_DIR).parquet(partition_path)
 
-    log_buffer.write("\n📑 Schema of the loaded partition:\n")
+    log_buffer.write("\nSchema of the loaded partition:\n")
     df.printSchema()
 
-    log_buffer.write("\n🔍 Sample records:\n")
+    log_buffer.write("\nSample records:\n")
     df.show(5, truncate=False)
 
     spark.stop()
 
 def main():
-    # Chuẩn bị buffer để ghi log
+    # Prepare a buffer to write log
     log_buffer = StringIO()
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_buffer.write(f"\n\n================ VALIDATION RUN: {timestamp} ================\n")
 
-    # Tạm thời chuyển stdout sang log_buffer
+    # Temporarily switch stdout to log buffer
     original_stdout = sys.stdout
     sys.stdout = log_buffer
 
@@ -58,10 +56,10 @@ def main():
     except Exception as e:
         log_buffer.write(f"\n❌ Error during validation: {e}\n")
     finally:
-        # Trả lại stdout ban đầu
+        # Return the original stdout
         sys.stdout = original_stdout
 
-        # Ghi buffer vào file log
+        # Write buffer to a log file
         os.makedirs(os.path.dirname(LOG_FILE_PATH), exist_ok=True)
         with open(LOG_FILE_PATH, "a") as log_file:
             log_file.write(log_buffer.getvalue())
